@@ -7,11 +7,17 @@ const mongoose = require("mongoose")
 
 // 2. SCHEMA
 const storeSchema = mongoose.Schema({
-	domicilio: {
+	nombre: {
 		type: String,
 		required: true
 	},
-	telefono: {
+	direccion: {
+		type: String
+	},
+	descripcion: {
+		type: String
+	}, 
+	imagen: {
 		type: String
 	}
 })
